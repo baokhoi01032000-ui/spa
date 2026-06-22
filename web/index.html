@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Massage Booking</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7efe7;
+      color: #3b2a20;
+    }
+
+    header {
+      background: #2f2118;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #d8b26e;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 520px;
+      background: linear-gradient(rgba(47,33,24,.6), rgba(47,33,24,.6)),
+      url("images/banner.jfif");
+      background-size: cover;
+      background-position: center;
+      padding: 90px 8%;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 54px;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
+
+    .search-box {
+      background: white;
+      padding: 22px;
+      border-radius: 16px;
+      max-width: 950px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button {
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 15px;
+    }
+
+    .search-box button {
+      background: #b88a44;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .section-desc {
+      text-align: center;
+      margin-bottom: 45px;
+      color: #765f51;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #f1dfc7;
+      color: #7a5523;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #b88a44;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2f2118;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .profile-section {
+      background: #fffaf4;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: white;
+      border-radius: 28px;
+      padding: 35px;
+      box-shadow: 0 10px 35px rgba(0,0,0,.08);
+    }
+
+    .profile img {
+      width: 100%;
+      border-radius: 22px;
+    }
+
+    .profile h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .profile ul {
+      margin: 20px 0;
+      padding-left: 20px;
+      line-height: 2;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.06);
+    }
+
+    .stars {
+      color: #d8a441;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .booking {
+      background: #2f2118;
+      color: white;
+      border-radius: 28px;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+
+    .booking form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .booking input,
+    .booking select,
+    .booking textarea {
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      font-size: 15px;
+    }
+
+    .booking button {
+      background: #d8b26e;
+      color: #2f2118;
+      border: none;
+      padding: 16px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #1e1510;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .search-box,
+      .cards,
+      .profile,
+      .reviews,
+      .booking {
+        grid-template-columns: 1fr;
+      }
+    }
+.call-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#b88a44;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    z-index:9999;
+}
+  </style>
+</head>
+<a href="tel:0988888888" class="call-btn">
+📞 Gọi ngay
+</a>
+<body>
+
+<header>
+  <div class="logo">MASSAGE 24/7</div>
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Dịch vụ</a>
+    <a href="#">Chuyên viên</a>
+    <a href="#">Bảng giá</a>
+    <a href="#">Liên hệ</a>
+<a href="tel:0988888888">📞 Gọi ngay</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Không gian chăm sóc sắc đẹp cao cấp</h1>
+  <p>
+    Tận hưởng liệu trình thư giãn, chăm sóc da và phục hồi cơ thể trong không gian sang trọng, riêng tư và tinh tế.
+  </p>
+<a href="tel:0988888888" class="btn">
+📞 Đặt lịch ngay
+</a>
+
+  <div class="search-box">
+    <input type="text" placeholder="Tìm dịch vụ spa..." />
+    <select>
+      <option>Chọn khu vực</option>
+      <option>Hải Phòng</option>
+      <option>Hà Nội</option>
+    </select>
+    <select>
+      <option>Khoảng giá</option>
+      <option>Dưới 500.000đ</option>
+      <option>500.000đ - 1.000.000đ</option>
+      <option>Trên 1.000.000đ</option>
+    </select>
+    <button>Tìm kiếm</button>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Dịch vụ nổi bật</h2>
+  <p class="section-desc">Các liệu trình được khách hàng yêu thích nhất</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="images/service1.jfif">
+      <div class="card-content">
+        <span class="tag">Chăm sóc da</span>
+        <h3>Facial Luxury</h3>
+        <p>Làm sạch sâu, cấp ẩm, phục hồi làn da căng bóng.</p>
+        <div class="price">450.000đ</div>
+        <a class="btn" href="#">Đặt lịch</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/service2.jfif">
+      <div class="card-content">
+        <span class="tag">Massage</span>
+        <h3>Massage Body</h3>
+        <p>Thư giãn toàn thân, giảm đau mỏi, phục hồi năng lượng.</p>
+        <div class="price">600.000đ</div>
+        <a class="btn" href="#">Đặt lịch</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/service3.jfif">
+      <div class="card-content">
+        <span class="tag">Dưỡng sinh</span>
+        <h3>Gội đầu dưỡng sinh</h3>
+        <p>Chăm sóc da đầu, cổ vai gáy, thư giãn nhẹ nhàng.</p>
+        <div class="price">280.000đ</div>
+        <a class="btn" href="#">Đặt lịch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="profile-section">
+  <div class="profile">
+    <img src="images/staff.jfif">
+    <div>
+      <h2>Hồ sơ chuyên viên</h2>
+      <p>
+        Đội ngũ kỹ thuật viên được đào tạo chuyên sâu, tư vấn liệu trình phù hợp với từng tình trạng da và nhu cầu thư giãn.
+      </p>
+      <ul>
+        <li>Kinh nghiệm từ 3–7 năm</li>
+        <li>Sử dụng mỹ phẩm chính hãng</li>
+        <li>Không gian riêng tư, sạch sẽ</li>
+        <li>Đặt lịch nhanh qua Zalo hoặc website</li>
+      </ul>
+      <a class="btn" href="#">Xem chuyên viên</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Đánh giá khách hàng</h2>
+  <p class="section-desc">Những trải nghiệm thực tế tại spa</p>
+
+  <div class="reviews">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>Không gian rất sạch và thơm. Nhân viên tư vấn kỹ, làm da xong thấy mịn hơn nhiều.</p>
+      <strong>- Minh Anh</strong>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>Dịch vụ massage rất thư giãn. Giá hợp lý, đặt lịch nhanh.</p>
+      <strong>- Thu Hà</strong>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>Rất thích cách chăm sóc khách hàng. Spa đẹp, sang và yên tĩnh.</p>
+      <strong>- Ngọc Linh</strong>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="booking">
+    <div>
+      <h2>Đặt lịch tư vấn</h2>
+      <p style="margin-top:15px; line-height:1.7;">
+        Để lại thông tin, spa sẽ liên hệ tư vấn liệu trình phù hợp nhất cho bạn.
+      </p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Họ và tên" required>
+      <input type="tel" placeholder="Số điện thoại" required>
+      <select>
+        <option>Chọn dịch vụ</option>
+        <option>Chăm sóc da</option>
+        <option>Massage body</option>
+        <option>Gội đầu dưỡng sinh</option>
+        <option>Trị mụn</option>
+      </select>
+      <textarea rows="4" placeholder="Nhu cầu của bạn"></textarea>
+      <button type="submit">Gửi thông tin</button>
+    </form>
+  </div>
+</section>
+<section>
+    <h2 class="section-title">Địa chỉ của chúng tôi</h2>
+
+    <h2>Thông tin liên hệ</h2>
+
+<p>
+📍 Địa Chỉ
+</p>
+
+<p>
+☎ 0988 888 888
+</p>
+
+<p>
+📧 spa@gmail.com
+</p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d41014.94101558195!2d46.65825457069694!3d24.68417668611673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1782141217158!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      ></iframe>
+
+</section>
+
+<footer>
+  <section>
+
+</section>
+</footer>
+
+</body>
+</html>
