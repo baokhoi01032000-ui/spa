@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Massage JuFFair 24/7 | Premium Massage in Juffair Bahrain</title>
+  <meta name="description" content="Massage JuFFair 24/7 provides premium home massage services in Juffair, Bahrain. Professional therapists, private booking and fast WhatsApp appointment." />
+  <meta name="keywords" content="massage Bahrain, massage Juffair, spa Bahrain, Thai massage Bahrain, oil massage Bahrain, full body massage Bahrain">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Tahoma,sans-serif}
+    body{background:#0f1115;color:#f2f2f2}
+    header{background:#121212;color:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #2d2d2d}
+    .logo{font-size:26px;font-weight:bold;color:#d4af37}
+    nav a{color:white;text-decoration:none;margin-left:25px;font-size:15px}
+    nav a:hover{color:#d4af37}
+
+    .hero{
+      min-height:520px;
+      background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),url("images/banner.jfif");
+      background-size:cover;
+      background-position:center;
+      padding:90px 8%;
+      color:white;
+    }
+
+    .hero h1{font-size:54px;max-width:760px;margin-bottom:20px}
+    .hero p{font-size:20px;max-width:720px;margin-bottom:25px;line-height:1.7;color:#ddd}
+    .ar{direction:rtl;text-align:right}
+    .gold{color:#d4af37}
+
+    .btn{
+      display:inline-block;background:#d4af37;color:#111;
+      padding:12px 20px;border-radius:10px;text-decoration:none;
+      margin-top:10px;font-weight:bold
+    }
+    .btn:hover{background:#f2c94c}
+
+    section{padding:70px 8%}
+    .section-title{font-size:36px;margin-bottom:12px;text-align:center;color:#fff}
+    .section-desc{text-align:center;margin-bottom:45px;color:#b7b7b7;line-height:1.7}
+
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+    .card{background:#1a1a1a;border-radius:20px;overflow:hidden;border:1px solid #303030;box-shadow:0 10px 35px rgba(0,0,0,.5)}
+    .card img{width:100%;height:360px;object-fit:cover}
+    .service-card img{height:260px}
+    .card-content{padding:22px}
+    .card h3{font-size:23px;margin-bottom:10px;color:white}
+    .card p{color:#cfcfcf;line-height:1.6;margin-bottom:8px}
+    .tag{display:inline-block;background:#2a2a2a;color:#d4af37;padding:6px 12px;border-radius:20px;font-size:13px;margin-bottom:12px;border:1px solid #444}
+    .price{font-size:20px;color:#d4af37;font-weight:bold;margin:15px 0}
+
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .review{background:#181818;padding:25px;border-radius:18px;border:1px solid #303030}
+    .stars{color:#d4af37;font-size:20px;margin-bottom:12px}
+
+    .booking{background:#161616;color:white;border-radius:28px;padding:50px;display:grid;grid-template-columns:1fr 1fr;gap:35px;border:1px solid #303030}
+    .booking p{color:#d0d0d0;line-height:1.7}
+    .booking form{display:grid;gap:14px}
+    .booking input,.booking select,.booking textarea{padding:15px;border-radius:10px;border:1px solid #333;font-size:15px;background:#0f0f0f;color:white}
+    .booking button{background:#d4af37;color:#111;border:none;padding:16px;border-radius:10px;font-weight:bold;cursor:pointer}
+
+    .contact-info{background:#181818;border:1px solid #303030;border-radius:20px;padding:30px;margin-bottom:25px}
+    .contact-info p{color:#d0d0d0;margin-bottom:10px}
+    iframe{width:100%;border-radius:20px;filter:grayscale(20%) brightness(80%)}
+
+    footer{
+      background:#080808;
+      padding:50px 20px;
+      text-align:center;
+      border-top:1px solid #222;
+    }
+
+    .footer-brand h3{
+      color:#d4af37;
+      font-size:32px;
+      margin-bottom:12px;
+    }
+
+    .footer-brand p{
+      color:#bdbdbd;
+      line-height:1.8;
+    }
+
+    .footer-brand .ar{
+      direction:rtl;
+      margin-top:8px;
+    }
+
+    .footer-contact{
+      margin:28px 0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .footer-contact a{
+      color:#25d366;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .footer-brand hr{
+      margin:30px auto;
+      width:120px;
+      border:1px solid #333;
+    }
+
+    .copyright{
+      color:#777;
+      font-size:14px;
+    }
+
+    .call-btn{
+      position:fixed;right:20px;bottom:20px;background:#25d366;color:white;
+      padding:15px 20px;border-radius:50px;text-decoration:none;
+      font-weight:bold;z-index:9999;box-shadow:0 8px 25px rgba(0,0,0,.45)
+    }
+
+    @media(max-width:900px){
+      header{flex-direction:column;gap:15px}
+      nav a{margin:0 8px}
+      .hero h1{font-size:38px}
+      .cards,.reviews,.booking{grid-template-columns:1fr}
+      .card img{height:420px}
+      .service-card img{height:280px}
+    }
+  
+.booking-left{display:flex;flex-direction:column;justify-content:center}
+.booking-image{width:100%;max-width:430px;margin:0 auto 30px;display:block;border-radius:22px;border:4px solid #d4af37;box-shadow:0 15px 35px rgba(0,0,0,.45);object-fit:cover}
+.booking-left .btn{margin-top:25px;width:250px}
+
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:999;
+      backdrop-filter:blur(12px);
+    }
+
+    .logo{
+      font-size:34px;
+      font-weight:900;
+      color:#d4af37;
+      letter-spacing:.5px;
+      text-transform:none;
+      text-shadow:0 0 14px rgba(212,175,55,.32);
+      display:flex;
+      align-items:center;
+      gap:8px;
+      white-space:nowrap;
+    }
+
+    .logo span{
+      color:#ffffff;
+      font-size:21px;
+      font-weight:800;
+      background:#242424;
+      border:1px solid #3a3a3a;
+      padding:4px 9px;
+      border-radius:999px;
+      text-shadow:none;
+    }
+
+    nav a{
+      position:relative;
+      transition:.25s ease;
+    }
+
+    nav a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-7px;
+      width:0;
+      height:2px;
+      background:#d4af37;
+      transition:.25s ease;
+    }
+
+    nav a:hover::after{
+      width:100%;
+    }
+
+    @media(max-width:900px){
+      .logo{
+        font-size:28px;
+        justify-content:center;
+      }
+      .logo span{
+        font-size:18px;
+      }
+    }
+
+  
+    .booking-left{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:18px;
+    }
+
+    .booking-photo{
+      width:100%;
+      max-width:520px;
+      height:300px;
+      object-fit:cover;
+      border-radius:24px;
+      border:4px solid #d4af37;
+      box-shadow:0 18px 45px rgba(0,0,0,.55);
+      margin-bottom:8px;
+    }
+
+    .booking-left .quick-info{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:6px;
+    }
+
+    .booking-left .quick-info span{
+      background:#202020;
+      border:1px solid #333;
+      color:#d4af37;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:bold;
+    }
+
+    @media(max-width:900px){
+      .booking-photo{
+        height:260px;
+        max-width:100%;
+      }
+    }
+
+  
+    .reviews{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    .review{
+      background:#4b4b4b;
+      border:1px solid #bdbdbd;
+      border-radius:5px;
+      overflow:hidden;
+      padding:0;
+      box-shadow:none;
+    }
+
+    .review-head{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      padding:18px 20px;
+      min-height:115px;
+      border-bottom:1px solid #bdbdbd;
+    }
+
+    .review-avatar{
+      width:86px;
+      height:86px;
+      border-radius:50%;
+      object-fit:cover;
+      flex:0 0 86px;
+    }
+
+    .review-name{
+      color:#fff;
+      font-size:18px;
+      font-weight:800;
+      text-transform:uppercase;
+      margin-bottom:8px;
+    }
+
+    .review-stars{
+      color:#d4af37;
+      letter-spacing:3px;
+      font-size:17px;
+      line-height:1;
+    }
+
+    .review-body{
+      padding:12px 20px 18px;
+      color:#fff;
+      font-size:18px;
+      line-height:1.42;
+      font-weight:700;
+    }
+
+    @media(max-width:900px){
+      .reviews{grid-template-columns:1fr}
+      .review-body{font-size:16px}
+    }
+
+    .reviews-section{
+      background:#ffffff;
+      color:#111;
+      padding:60px 0 70px;
+      overflow:hidden;
+    }
+    .reviews-section .section-title{
+      color:#000;
+      font-size:36px;
+      font-weight:900;
+      margin-bottom:18px;
+    }
+    .overall-stars{
+      text-align:center;
+      color:#ffc400;
+      font-size:48px;
+      line-height:1;
+      margin-bottom:28px;
+      letter-spacing:4px;
+    }
+    .reviews-film-wrap{
+      position:relative;
+      width:100%;
+      overflow:hidden;
+      padding:0 42px;
+      user-select:none;
+    }
+    .reviews-film{
+      display:flex;
+      gap:18px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      -webkit-overflow-scrolling:touch;
+      cursor:grab;
+      scrollbar-width:none;
+      padding-bottom:6px;
+    }
+    .reviews-film::-webkit-scrollbar{display:none}
+    .reviews-film.dragging{
+      cursor:grabbing;
+      scroll-behavior:auto;
+      scroll-snap-type:none;
+    }
+    .reviews-page{
+      min-width:100%;
+      scroll-snap-align:start;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .review-card{
+      background:#4b4b4b;
+      color:#fff;
+      border-radius:4px;
+      overflow:hidden;
+      border:1px solid #d2d2d2;
+      min-height:292px;
+    }
+    .review-head{
+      min-height:116px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+      padding:18px 20px;
+      border-bottom:1px solid #d2d2d2;
+    }
+    .review-avatar{
+      width:86px;
+      height:86px;
+      border-radius:50%;
+      object-fit:cover;
+      flex:0 0 86px;
+    }
+    .review-name{
+      font-size:18px;
+      line-height:1.2;
+      font-weight:900;
+      text-transform:uppercase;
+      color:#fff;
+      margin-bottom:8px;
+    }
+    .review-stars{
+      color:#d4af37;
+      font-size:17px;
+      letter-spacing:2px;
+    }
+    .review-body{
+      padding:13px 20px 22px;
+      font-size:18px;
+      font-weight:700;
+      line-height:1.42;
+      color:#fff;
+    }
+    .film-arrow{
+      position:absolute;
+      top:54%;
+      transform:translateY(-50%);
+      color:#e8e8e8;
+      font-size:52px;
+      z-index:4;
+      background:transparent;
+      border:0;
+      cursor:pointer;
+      line-height:1;
+      padding:8px;
+    }
+    .film-arrow.left{left:4px}
+    .film-arrow.right{right:4px}
+    .review-dots{
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      margin-top:26px;
+    }
+    .review-dots button{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:#cfcfcf;
+      border:0;
+      padding:0;
+      cursor:pointer;
+    }
+    .review-dots button.active{background:#000}
+    @media(max-width:900px){
+      .reviews-section{padding:45px 0 55px}
+      .reviews-section .section-title{font-size:30px}
+      .overall-stars{font-size:38px}
+      .reviews-film-wrap{padding:0 24px}
+      .reviews-page{
+        grid-template-columns:1fr;
+        gap:14px;
+      }
+      .review-card{min-height:auto}
+      .review-body{font-size:15px}
+      .film-arrow{font-size:42px}
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+<a href="https://wa.me/97366335321" target="_blank" rel="noopener" class="call-btn">💬 WhatsApp</a>
+
+<header>
+  <div class="logo">Massage JuFFair <span>24/7</span></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#therapists">Therapists</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Luxury Massage & Wellness Experience in Juffair, Bahrain</h1>
+  <p>
+    Enjoy a private, relaxing and premium massage experience with professional therapists, elegant rooms and fast booking.
+  </p>
+  <p class="ar">
+    استمتع بتجربة مساج فاخرة وخاصة في جدحفص، البحرين مع معالجين محترفين، أجواء هادئة، وحجز سريع.
+  </p>
+  <a href="https://wa.me/97366335321" target="_blank" rel="noopener" class="btn">Book on WhatsApp | احجز عبر واتساب</a>
+</section>
+
+<section id="therapists">
+  <h2 class="section-title">Our Therapists | المعالجون</h2>
+  <p class="section-desc">
+    Professional massage therapists available for private booking.<br>
+    <span class="ar">معالجون محترفون متاحون للحجز الخاص.</span>
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="images/ad1.jpeg" alt="Sofia Massage Therapist" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Therapist | معالجة</span>
+        <h3>Sofia</h3>
+        <p>Relaxing full body massage specialist.</p>
+        <p class="ar">متخصصة في مساج الجسم الكامل والاسترخاء.</p>
+        <a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book Sofia on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ad2.jpeg" alt="Maya Massage Therapist" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Therapist | معالجة</span>
+        <h3>Maya</h3>
+        <p>Thai massage and deep relaxation expert.</p>
+        <p class="ar">خبيرة في المساج التايلندي والاسترخاء العميق.</p>
+        <a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book Maya on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ad3.jpeg" alt="Lina Massage Therapist" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Therapist | معالجة</span>
+        <h3>Lina</h3>
+        <p>Oil massage and stress relief treatment.</p>
+        <p class="ar">مساج بالزيوت لتخفيف التوتر والإجهاد.</p>
+        <a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book Lina on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ad4.jpeg" alt="Noura Massage Therapist" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Therapist | معالجة</span>
+        <h3>Noura</h3>
+        <p>Luxury spa and wellness service.</p>
+        <p class="ar">خدمة سبا ومساج فاخرة للعافية والاسترخاء.</p>
+        <a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book Noura on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ad5.jpeg" alt="Amira Massage Therapist" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Therapist | معالجة</span>
+        <h3>Amira</h3>
+        <p>Professional relaxation and body recovery.</p>
+        <p class="ar">استرخاء احترافي وتجديد طاقة الجسم.</p>
+        <a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book Amira on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/ad6.jpeg" alt="Yasmin Massage Therapist" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Therapist | معالجة</span>
+        <h3>Yasmin</h3>
+        <p>Private massage service with gentle care.</p>
+        <p class="ar">خدمة مساج خاصة بعناية لطيفة ومريحة.</p>
+        <a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book Yasmin on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Featured Services | الخدمات المميزة</h2>
+  <p class="section-desc">
+    Premium massage treatments designed for relaxation and body recovery.<br>
+    <span class="ar">خدمات مساج فاخرة للاسترخاء وتجديد نشاط الجسم.</span>
+  </p>
+
+  <div class="cards">
+    <div class="card service-card">
+      <img src="images/ad7.jpeg" alt="Full Body Massage" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Massage | مساج</span>
+        <h3>Full Body Massage</h3>
+        <p>Complete body relaxation and muscle relief.</p>
+        <p class="ar">استرخاء كامل للجسم وتخفيف آلام العضلات.</p>
+<a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card service-card">
+      <img src="images/ad8.jpeg" alt="Thai Massage" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Thai Massage | مساج تايلندي</span>
+        <h3>Thai Massage</h3>
+        <p>Traditional stretching massage for energy and flexibility.</p>
+        <p class="ar">مساج تايلندي تقليدي للطاقة والمرونة.</p>
+<a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card service-card">
+      <img src="images/ad9.jpeg" alt="Oil Massage" loading="lazy">
+      <div class="card-content">
+        <span class="tag">Oil Massage | مساج بالزيوت</span>
+        <h3>Oil Massage</h3>
+        <p>Gentle aromatic oil massage for deep relaxation.</p>
+        <p class="ar">مساج عطري بالزيوت للاسترخاء العميق.</p>
+<a class="btn" href="https://wa.me/97366335321" target="_blank" rel="noopener">Book on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="reviews-section">
+  <h2 class="section-title">Our Customers Say</h2>
+  <div class="overall-stars">★★★★<span style="color:#b8c7cf">★</span></div>
+
+  <div class="reviews-film-wrap">
+    <button class="film-arrow left" type="button" aria-label="Previous reviews">‹</button>
+    <div class="reviews-film" id="reviewsFilm">
+      <div class="reviews-page">
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review1.jpeg" alt="Mohammed Khalid review" loading="lazy">
+            <div>
+              <div class="review-name">MOHAMMED KHALID</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“I’ve been using Home Massage Services at Massage Juffair for several months now, and I’m always impressed with the quality of their massages. The therapists are friendly, punctual, and highly skilled. It’s the perfect way to unwind without leaving the comfort of your home.”</div>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review2.jpeg" alt="Khalid Abdullah review" loading="lazy">
+            <div>
+              <div class="review-name">KHALID ABDULLAH</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“I was skeptical about trying a home massage service, but Massage Juffair exceeded my expectations. The therapist was attentive and created a serene ambiance. The convenience of having a massage at home is unbeatable, and I’ll definitely be booking their services again.”</div>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review3.jpeg" alt="Abdullah Abdulaziz review" loading="lazy">
+            <div>
+              <div class="review-name">ABDULLAH ABDULAZIZ</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“Massage Juffair provided an exceptional experience from start to finish. The booking process was simple, the therapist arrived on time, and the massage was pure bliss. I appreciate their attention to detail and commitment to customer satisfaction.”</div>
+        </div>
+      </div>
+      <div class="reviews-page">
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review4.jpeg" alt="Yousef Ali review" loading="lazy">
+            <div>
+              <div class="review-name">YOUSEF ALI</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“The best massage service I’ve tried in Bahrain. The therapist was professional, courteous, and very skilled. Massage Juffair has become my go-to for relaxation after a long week. Highly recommended!”</div>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review5.jpeg" alt="Ahmed Aldosari review" loading="lazy">
+            <div>
+              <div class="review-name">AHMED ALDOSARI</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“I love the convenience and privacy that Massage Juffair offers. The therapist was amazing and tailored the massage to my needs. It’s a luxury experience right in the comfort of your home.”</div>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review6.jpeg" alt="Hussain Majid review" loading="lazy">
+            <div>
+              <div class="review-name">HUSSAIN MAJID</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“From booking to the actual massage, everything was seamless. The therapist was punctual and very professional. Massage Juffair is definitely worth it if you’re looking for top-quality service at home.”</div>
+        </div>
+      </div>
+      <div class="reviews-page">
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review7.jpeg" alt="Faisal Alharbi review" loading="lazy">
+            <div>
+              <div class="review-name">FAISAL ALHARBI</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“Excellent service and highly skilled therapists. Massage Juffair helped me relieve stress and muscle tension like no other. I will continue to use their services and recommend them to my friends.”</div>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review8.jpeg" alt="Saad Almutairi review" loading="lazy">
+            <div>
+              <div class="review-name">SAAD ALMUTAIRI</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“A truly professional service. The therapist was knowledgeable and made me feel very comfortable. Massage Juffair is now my preferred choice for home massages in Bahrain.”</div>
+        </div>
+        <div class="review-card">
+          <div class="review-head">
+            <img class="review-avatar" src="images/review9.jpeg" alt="Ali Hasan review" loading="lazy">
+            <div>
+              <div class="review-name">ALI HASAN</div>
+              <div class="review-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="review-body">“I was amazed by the quality of the massage and the professionalism of the therapist. Massage Juffair offers a premium experience that is hard to find elsewhere. Five stars!”</div>
+        </div>
+      </div>
+    </div>
+    <button class="film-arrow right" type="button" aria-label="Next reviews">›</button>
+  </div>
+
+  <div class="review-dots" id="reviewDots">
+    <button class="active" type="button" aria-label="Review page 1"></button>
+    <button type="button" aria-label="Review page 2"></button>
+    <button type="button" aria-label="Review page 3"></button>
+  </div>
+</section>
+
+
+
+
+<section id="booking">
+  <div class="booking">
+    <div>
+      <h2>Book Your Appointment</h2>
+      <p>
+        Leave your details and our team will contact you shortly.
+      </p>
+      <p class="ar">
+        اترك بياناتك وسيتواصل معك فريقنا في أقرب وقت.
+      </p>
+    </div>
+
+    <form id="bookingForm">
+      <input id="customerName" type="text" placeholder="Name | الاسم" required>
+      <input id="customerPhone" type="tel" placeholder="Phone Number | رقم الهاتف" required>
+      <select id="customerService" required>
+        <option value="">Select Service | اختر الخدمة</option>
+        <option>Full Body Massage</option>
+        <option>Thai Massage</option>
+        <option>Oil Massage</option>
+        <option>Home Massage</option>
+      </select>
+      <textarea id="customerMessage" rows="4" placeholder="Message | رسالتك"></textarea>
+      <button type="submit">Submit Booking | إرسال الحجز</button>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us | تواصل معنا</h2>
+
+  <div class="contact-info">
+    <p>📍 Juffair / Manama, Kingdom of Bahrain</p>
+    <p class="ar">📍 الجفير / المنامة، مملكة البحرين</p>
+    <p>💬 WhatsApp: +973 6633 5321</p>
+    <p>📧 booking@massagejuffair247.com</p>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps?q=26.2185,50.5905&z=12&output=embed"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+
+  <div class="footer-brand">
+    <h3>Massage JuFFair 24/7</h3>
+
+    <p>
+      Premium Home Massage Service in Juffair, Kingdom of Bahrain
+    </p>
+
+    <p class="ar">
+      خدمة مساج منزلية فاخرة في الجفير، مملكة البحرين
+    </p>
+
+    <div class="footer-contact">
+      <a href="https://wa.me/97366335321" target="_blank" rel="noopener">
+        💬 WhatsApp: +973 6633 5321
+      </a>
+
+      <span>|</span>
+
+      <span>📍 Juffair / Manama, Bahrain</span>
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+      © 2026 <strong>Massage JuFFair 24/7</strong>. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("bookingForm");
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("customerName").value.trim();
+        const phone = document.getElementById("customerPhone").value.trim();
+        const service = document.getElementById("customerService").value.trim();
+        const message = document.getElementById("customerMessage").value.trim();
+
+        const whatsappNumber = "97366335321";
+
+        const text =
+          "New Booking Request - Massage JuFFair 24/7%0A%0A" +
+          "Name: " + encodeURIComponent(name) + "%0A" +
+          "Phone: " + encodeURIComponent(phone) + "%0A" +
+          "Service: " + encodeURIComponent(service) + "%0A" +
+          "Message: " + encodeURIComponent(message || "No message") + "%0A%0A" +
+          "Location: Juffair, Bahrain";
+
+        window.open("https://wa.me/" + whatsappNumber + "?text=" + text, "_blank");
+      });
+    }
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const film = document.getElementById("reviewsFilm");
+    const dotsWrap = document.getElementById("reviewDots");
+    if (!film || !dotsWrap) return;
+
+    const dots = Array.from(dotsWrap.querySelectorAll("button"));
+    const prev = document.querySelector(".film-arrow.left");
+    const next = document.querySelector(".film-arrow.right");
+
+    function pageWidth() {
+      return film.clientWidth + 18;
+    }
+
+    function currentPage() {
+      return Math.round(film.scrollLeft / pageWidth());
+    }
+
+    function goToPage(index) {
+      const max = dots.length - 1;
+      const page = Math.max(0, Math.min(index, max));
+      film.scrollTo({ left: page * pageWidth(), behavior: "smooth" });
+      updateDots(page);
+    }
+
+    function updateDots(index = currentPage()) {
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+    }
+
+    dots.forEach((dot, i) => dot.addEventListener("click", () => goToPage(i)));
+    if (prev) prev.addEventListener("click", () => goToPage(currentPage() - 1));
+    if (next) next.addEventListener("click", () => goToPage(currentPage() + 1));
+
+    film.addEventListener("scroll", () => {
+      window.requestAnimationFrame(() => updateDots());
+    });
+
+    let isDown = false;
+    let startX = 0;
+    let startScroll = 0;
+
+    film.addEventListener("pointerdown", (e) => {
+      isDown = true;
+      film.classList.add("dragging");
+      startX = e.pageX;
+      startScroll = film.scrollLeft;
+      film.setPointerCapture(e.pointerId);
+    });
+
+    film.addEventListener("pointermove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const walk = e.pageX - startX;
+      film.scrollLeft = startScroll - walk;
+    });
+
+    function stopDrag() {
+      if (!isDown) return;
+      isDown = false;
+      film.classList.remove("dragging");
+      goToPage(currentPage());
+    }
+
+    film.addEventListener("pointerup", stopDrag);
+    film.addEventListener("pointercancel", stopDrag);
+    film.addEventListener("pointerleave", stopDrag);
+
+    updateDots(0);
+  });
+</script>
+
+</body>
+</html>
