@@ -6,9 +6,9 @@ Nhánh triển khai: `main`
 
 ## Thông tin WhatsApp hiện tại
 
-- Số hiển thị: **+968 9597 9230**
-- Số dùng trong liên kết: **96895979230**
-- Liên kết chuẩn: `https://wa.me/96895979230`
+- Số hiển thị: **+973 3755 6869**
+- Số dùng trong liên kết: **97337556869**
+- Liên kết chuẩn: `https://wa.me/97337556869`
 
 Lưu ý: liên kết `wa.me` chỉ dùng chữ số, không có dấu `+`, khoảng trắng hoặc dấu gạch.
 
@@ -60,7 +60,13 @@ Các tệp cần kiểm tra:
 ### 11/09/2026 — Đổi WhatsApp
 
 - Số cũ: **+973 3951 1579**
-- Số mới: **+968 9597 9230**
+- Số mới: **+973 3755 6869**
 - Đã đồng bộ toàn bộ 13 tệp HTML.
 - Đã kiểm tra mã nguồn không còn số cũ.
 - Đã xác minh bản live và liên kết `wa.me/96895979230`.
+
+
+## Lịch sử thay đổi
+
+- 2026-09-11: thay số WhatsApp từ **+973 3951 1579** sang **+968 9597 9230**.
+- 2026-09-11: thay số WhatsApp từ **+968 9597 9230** sang **+973 3755 6869**; đồng bộ trang chủ, landing page tiếng Anh, landing page tiếng Ả Rập và dữ liệu SEO.
