@@ -16,7 +16,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     gtag("js", new Date());
     gtag('config', 'AW-18558122948');
   </script>
-  <!-- End Google Ads tag -->
+  <!-- End Google Ads tag --><!-- Event snippet for Người liên hệ conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18558122948/ksCKCM7hnrsdEMT3mZFF',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home Massage in Juffair, Bahrain | Hotel & Home Massage</title>
@@ -105,7 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDJMBHTR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<a href="https://wa.me/97337556869" target="_blank" rel="noopener" class="call-btn">💬 WhatsApp</a>
+<a href="https://wa.me/97337556869" target="_blank" rel="noopener" class="call-btn "onclick="return gtag_report_conversion(this.href)">💬 WhatsApp</a>
 
 <header>
   <div class="logo">Massage Juffair <span>24/7</span></div>
@@ -126,9 +142,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Book a relaxing wellness massage appointment with experienced therapists. Home, hotel and apartment service available in Juffair, Manama and nearby areas.</p>
     <p class="ar" lang="ar">خدمة مساج احترافية في الجفير والمنامة، البحرين مع حجز سريع عبر واتساب وفريق متخصص في الاسترخاء والعافية.</p>
     <a href="https://wa.me/97337556869" target="_blank" rel="noopener" class="btn">Book on WhatsApp | احجز عبر واتساب</a>
-    <a href="#services" class="btn secondary">View Services</a>
-  </div>
-</section>
+    <a href="#services" class="btn secondary">View Services</aonclick="return gtag_report_conversion(this.href)">
+   View Services</a> 
+    onclick="return gtag_report_conversion(this.href)" 
+</section> 
 
 <section class="trust-strip" aria-label="Trust signals">
   <div class="trust-item"><strong>Professional Service</strong><span>Experienced wellness massage therapists.</span></div>
