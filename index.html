@@ -22,15 +22,28 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
-      window.location = url;
+      window.location.href = url;
     }
   };
+  if (typeof gtag !== 'function') {
+    callback();
+    return false;
+  }
   gtag('event', 'conversion', {
-      'send_to': 'AW-18558122948/ksCKCM7hnrsdEMT3mZFF',
-      'event_callback': callback
+    'send_to': 'AW-18558122948/ksCKCM7hnrsdEMT3mZFF',
+    'event_callback': callback,
+    'event_timeout': 2000
   });
   return false;
 }
+
+document.addEventListener("click", function (event) {
+  var link = event.target.closest && event.target.closest('a[href*="wa.me/97337556869"]');
+  if (link) {
+    event.preventDefault();
+    gtag_report_conversion(link.href);
+  }
+});
 </script>
 
   <meta charset="UTF-8" />
@@ -142,9 +155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Book a relaxing wellness massage appointment with experienced therapists. Home, hotel and apartment service available in Juffair, Manama and nearby areas.</p>
     <p class="ar" lang="ar">خدمة مساج احترافية في الجفير والمنامة، البحرين مع حجز سريع عبر واتساب وفريق متخصص في الاسترخاء والعافية.</p>
     <a href="https://wa.me/97337556869" target="_blank" rel="noopener" class="btn">Book on WhatsApp | احجز عبر واتساب</a>
-    <a href="#services" class="btn secondary">View Services</aonclick="return gtag_report_conversion(this.href)">
-   View Services</a> 
-    onclick="return gtag_report_conversion(this.href)" 
+    <a href="#services" class="btn secondary">View Services</a>
 </section> 
 
 <section class="trust-strip" aria-label="Trust signals">
@@ -306,7 +317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           "Service: " + encodeURIComponent(service) + "%0A" +
           "Message: " + encodeURIComponent(message || "No message") + "%0A%0A" +
           "Location: Juffair / Manama, Bahrain";
-        window.open("https://wa.me/" + whatsappNumber + "?text=" + text, "_blank");
+        gtag_report_conversion("https://wa.me/" + whatsappNumber + "?text=" + text);
       });
     }
   });
@@ -336,30 +347,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 </script>
 
-  <!-- Google Ads WhatsApp conversion tracking -->
-  <script>
-    (function () {
-      function trackWhatsAppConversion() {
-        if (typeof gtag !== "function") return;
-        gtag("event", "conversion", {
-          send_to: "AW-18294179895/9swqCJiJ6OUcELeQrJNE",
-          value: 1,
-          currency: "VND"
-        });
-      }
-
-      document.addEventListener("click", function (event) {
-        var link = event.target.closest && event.target.closest('a[href*="wa.me/97337556869"]');
-        if (link) trackWhatsAppConversion();
-      });
-
-      document.addEventListener("submit", function (event) {
-        if (event.target && event.target.id === "bookingForm") {
-          trackWhatsAppConversion();
-        }
-      }, true);
-    })();
-  </script>
-  <!-- End Google Ads WhatsApp conversion tracking -->
 </body>
 </html>
